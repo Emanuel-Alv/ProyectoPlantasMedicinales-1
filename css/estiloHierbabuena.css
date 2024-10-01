@@ -1,3 +1,4 @@
+* Reseteo básico del margen y padding para todo el documento */
 body, html {
     margin: 0;
     padding: 0;
@@ -6,93 +7,103 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    font-family: Arial, sans-serif;
+    background-color: white; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Fuente general */
 }
 
+/* Contenedor principal para centrar contenido */
 .container {
     position: relative;
     width: 90%;
     max-width: 800px;
-    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centrar contenido verticalmente */
 }
 
+/* Tarjeta de información */
 .info-card {
     width: 70%;
-    height: 40%;
-    background-color: rgba(0, 128, 0, 0.3);
-    border-radius: 30px;
+    height: auto; /* Altura automática para ajustarse al contenido */
+    background-color: rgba(0, 128, 0, 0.3); /* Fondo verde claro */
+    border-radius: 30px; /* Bordes redondeados */
     display: flex;
     justify-content: center; /* Centra la imagen horizontalmente */
     align-items: center; /* Centra la imagen verticalmente */
-    margin-bottom: 20px; /* Espacio entre la tarjeta y el texto */
-    position: relative;
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    padding: 20px; /* Espacio interno */
 }
 
+/* Estilo para la imagen de planta */
 .plant-image {
-    width: 210px;
-    height: auto;
+    width: 210px; /* Ancho fijo */
+    height: auto; /* Mantener proporción */
 }
 
+/* Contenedor para columnas de texto */
 .text-columns {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 20px; /* Espacio entre los textos y el contenido */
+    margin-bottom: 20px; /* Espacio entre el texto y el contenido */
 }
 
+/* Estilo para las columnas de texto */
 .column {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding-right: 10px;
+    font-size: 25px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    padding-right: 10px; /* Espacio a la derecha */
 }
 
 .column.green {
-    color: rgba(0, 128, 0, 0.5);
+    color: rgba(0, 128, 0, 0.5); /* Color verde claro */
 }
 
+/* Contenido desplazable */
 .scroll-content {  
     width: 100%;
-    max-height: 39%; /* Altura ajustada según el diseño Swift */
-    overflow-y: auto;
-    padding: 20px;
+    max-height: 39%; /* Altura máxima */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(240, 240, 240, 0.8); /* Fondo gris claro */
 }
 
+/* Sección con margen */
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacio entre secciones */
 }
 
+/* Estilo para encabezados de sección */
 .section h2 {
-    font-size: 24px;            /* Tamaño de fuente */
-    font-weight: bold;         /* Negrita */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
     color: rgba(0, 128, 0, 0.7); /* Color verde oscuro */
-    margin-bottom: 10px;       /* Espacio debajo del encabezado */
-    text-align: center;        /* Centrar el texto */
-    text-transform: uppercase;  /* Convertir el texto a mayúsculas */
-    letter-spacing: 1px;       /* Espaciado entre letras */
-    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
 }
 
+/* Estilo para párrafos dentro de secciones */
 .section p {
     margin-top: 10px; /* Espacio entre el título y el texto */
 }
 
+/* Estilo para botón de regreso */
 .back-button {
-    background: none; /* Elimina el fondo del botón */
-    border: none; /* Elimina el borde del botón */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    position: absolute; /* Para posicionarlo en la esquina */
+    position: absolute; /* Posicionamiento absoluto */
     top: 40px; /* Distancia desde la parte superior */
     left: -10px; /* Distancia desde la izquierda */
 }
 
+/* Estilo para el ícono de retroceso */
 .back-icon {
-    width: 40px;
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 40px; /* Ancho fijo */
+    height: auto; /* Mantener proporción */
 }

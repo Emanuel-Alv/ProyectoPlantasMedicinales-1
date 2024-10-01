@@ -36,18 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
                 case 'coco':
                   window.location.href = '../html/infoCoco.html';
-                break;
-                case 'naranja':
-                    window.location.href = '../html/infoNaranja.html';
-                  break;
-                  case 'maiz':
+                break;                
+                case 'maiz':
                     window.location.href = '../html/infoMaiz.html';
-                  break;
-                  case 'naranja':
+                break;
+                case 'Naranja':
                     window.location.href = '../html/infoNaranja.html';
-                  break;                  
+                break;
+                case 'Chicozapote':
+                    window.location.href = '../html/infoChicoZapote.html';
+                break;   
+                case 'Canela':
+                    window.location.href = '..html/infoCanela.html';
+                break;     
+                case 'limon':
+                    window.location.href = '..html/infoLimon.html';
+                break;      
                 // Agrega más casos para otras plantas
-                default:
+                default:z
                     console.log(`No se encontró la vista para ${plantId}`);
             }
         });
