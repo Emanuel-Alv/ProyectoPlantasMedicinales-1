@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
                   case 'maiz':
                     window.location.href = '../html/infoMaiz.html';
                   break;
+                  case 'naranja':
+                    window.location.href = '../html/infoNaranja.html';
+                  break;                  
                 // Agrega más casos para otras plantas
                 default:
                     console.log(`No se encontró la vista para ${plantId}`);
